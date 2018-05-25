@@ -65,9 +65,13 @@ body {
 .main-bg {
   position: absolute;
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  background: url("../img/main.png") center top/100% auto no-repeat;
+  max-height: 1000px;
+  background: url("../img/head-star.png") center top/cover no-repeat, #000a29 url("../img/head.jpg") center top/90% no-repeat;
+}
+.main-bg img {
+  display: block;
+  width: 100%;
+  max-height: 1000px;
 }
 
 .wrap {
@@ -115,21 +119,24 @@ body {
 }
 
 section.main {
+  position: relative;
+  height: 70vh;
   color: #fff;
   background: url("../img/logo.svg") 0px 20px no-repeat;
 }
 section.main .main-text {
-  width: 350px;
+  position: relative;
+  width: 450px;
   margin: auto;
-  padding-top: 460px;
+  top: 75%;
 }
 section.main .main-text h1 {
   text-align: center;
-  font-size: 25px;
+  font-size: 32px;
   margin-bottom: 12px;
 }
 section.main .main-text p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 100;
   line-height: 1.8;
 }
@@ -234,7 +241,23 @@ section.platform .device {
   overflow: hidden;
   z-index: 1;
   border-radius: 8px;
+  background-color: #444;
   box-shadow: 0 4px 10px 0 rgba(161, 172, 183, 0.5);
+}
+.stream-vid .video-control {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.stream-vid .ae-logo {
+  position: absolute;
+  z-index: 1;
+  width: 130px;
+  top: 10px;
+  left: 10px;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
 }
 .stream-vid video {
   width: 100%;
@@ -267,7 +290,7 @@ section.platform .device {
   position: absolute;
   width: 850px;
   left: 50%;
-  margin-left: -475px;
+  margin-left: -425px;
   text-align: center;
   top: 0;
 }

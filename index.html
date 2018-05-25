@@ -7,7 +7,9 @@
 </head>
 <body>
 
-<div class="main-bg"></div>
+<div class="main-bg">
+	<img src="img/head-mask.png">
+</div>
 
 <div class="wrap">
 	<div class="cont">
@@ -53,6 +55,8 @@
 			</p>
 		</div>
 		<div class="stream-vid">
+			<!-- <div class="video-control"></div> -->
+			<img src="img/ae-white.svg" class="ae-logo">
 			<video id="video" autoplay controls></video>	
 		</div>
 		<div class="logo-ae-uwin">
@@ -104,7 +108,7 @@
 	</div>
 
 </div>
-
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
 <script>
@@ -123,6 +127,11 @@
       video.play();
     });
   }
+
+  $('.video-control').click(function() {
+  	console.log('sss');
+        $(video).play();
+    });
 </script>
 </body>
 </html>
