@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>AE UWIN</title>
-	<link rel="stylesheet" href="stylesheets/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AE UWIN</title>
+<link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
 
@@ -18,9 +19,9 @@
 				<h1>全球第一加密货币线上博彩平台</h1>
 				<p>一个接受各种加密货币的全新区块链博彩平台，<br>允许玩家使用各种不同的加密货币参与同一个平台。</p>
 				<div class="btn-group">
-					<div class="main-btn">
+					<a class="main-btn" href="AE_UWIN_WhitePaper_CN.pdf" target="_blank">
 						UWIN白皮書
-					</div>
+					</a>
 					<div class="main-btn rounded">
 						聯絡我們
 					</div>
@@ -95,9 +96,9 @@
 		<img src="img/footer-icon.png">
 		<h2>我们希望让 AE 游戏投注平台及加密货币持续成长，<br>因此我们在此邀请您成为我们的伙伴，共同分享我们的成功。</h2>
 		<div class="btn-group">
-			<div class="main-btn">
+			<a class="main-btn" href="AE_UWIN_WhitePaper_CN.pdf" target="_blank">
 				UWIN白皮書
-			</div>
+			</a>
 			<div class="main-btn rounded">
 				聯絡我們
 			</div>
@@ -108,30 +109,24 @@
 	</div>
 
 </div>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
 <script>
-	var video = document.getElementById('video');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('https://cdn1-venus.qn32.com/lobby/all_2s/playlist.m3u8');
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video.play();
-  });
- }
-  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://cdn1-venus.qn32.com/lobby/all_2s/playlist.m3u8';
-    video.addEventListener('loadedmetadata',function() {
-      video.play();
-    });
-  }
-
-  $('.video-control').click(function() {
-  	console.log('sss');
-        $(video).play();
-    });
+var video = document.getElementById('video');
+if(Hls.isSupported()) {
+var hls = new Hls();
+hls.loadSource('https://cdn1-venus.qn32.com/lobby/all_2s/playlist.m3u8');
+hls.attachMedia(video);
+hls.on(Hls.Events.MANIFEST_PARSED,function() {
+  video.play();
+});
+}
+else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+video.src = 'https://cdn1-venus.qn32.com/lobby/all_2s/playlist.m3u8';
+video.addEventListener('loadedmetadata',function() {
+  video.play();
+});
+}
 </script>
 </body>
 </html>
