@@ -313,7 +313,32 @@ body {
 		}
 	}
 }
-.ptr-logos {width: 100%;}
+
+.exchange {
+	position: relative;
+	margin-bottom: 25px;
+	.bg-wave {
+		width: 100%;
+	}
+	.exc {
+		position: absolute;
+		width: 310px;
+		height: 80px;
+		top: 50%;
+		left: 50%;
+		border-radius: 8px;
+		transform: translateX(-50%) translateY(-50%);
+		background: rgba(255,255,255,.9) url(../img/exchange.png) center/85% no-repeat;
+		box-shadow: 0 2px 3px 0 rgba(159, 159, 159, 0.2), 0 5px 30px 0 rgba(163, 195, 221, 0.5);
+	}
+}
+.ptr-logos {
+	position: relative;
+	display: block;
+	width: 100%;
+	max-width: 840px;
+	margin:0 auto;
+}
 .bottom-block {
 	color: #fff;
 	background:url('../img/footer-bg.png') no-repeat center bottom/1100px 502px;
@@ -348,6 +373,12 @@ body {
 //	iPhone6、7、8 Plus以上
 @media screen and (min-width: 400px) {
 	.bottom-block > .bottom-cont{padding-bottom:2.5em;}
+	.exchange {
+		.exc {
+			width: 350px;
+			height: 90px;
+		}
+	}
 }
 //	手機拿橫的，包含平板拿直的(版型區)
 @media screen and (min-width: 480px) {
@@ -364,6 +395,12 @@ body {
 	}
 	.platform-text > p{text-align: left;}
 	.bottom-block{background-size:1000px 456px;}
+	.exchange {
+		.exc {
+			width: 525px;
+			height: 135px;
+		}
+	}
 }
 //	防止.main-bg破版
 @media screen and (min-width: 820px) {
