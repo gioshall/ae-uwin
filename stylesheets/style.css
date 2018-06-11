@@ -371,7 +371,7 @@ body {
   margin: 0;
 }
 
-.about-ae > h2, .platform-text > h2 {
+.about-ae > h2, .platform-text > h2, .team > h2 {
   color: #0db0c9;
   font-size: 24px;
   text-align: center;
@@ -494,6 +494,36 @@ body {
   box-shadow: 0 2px 3px 0 rgba(159, 159, 159, 0.2), 0 5px 30px 0 rgba(163, 195, 221, 0.5);
 }
 
+.team {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+}
+.team .team-member {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.team .team-item {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.team .team-item h3 {
+  font-size: 21px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.1;
+  color: #333;
+}
+.team .team-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #606060;
+}
+
 .ptr-logos {
   position: relative;
   display: block;
@@ -584,6 +614,10 @@ body {
   .exchange .exc {
     width: 525px;
     height: 135px;
+  }
+
+  .team .team-item {
+    width: calc(100% / 3);
   }
 }
 @media screen and (min-width: 820px) {

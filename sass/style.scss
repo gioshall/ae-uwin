@@ -332,6 +332,37 @@ body {
 		box-shadow: 0 2px 3px 0 rgba(159, 159, 159, 0.2), 0 5px 30px 0 rgba(163, 195, 221, 0.5);
 	}
 }
+
+.team {
+	width: 100%;
+	max-width: 840px;
+	margin:0 auto;
+	> h2{@extend %title-h2;}
+	.team-member {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+	.team-item {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 30px;
+		h3 {
+			font-size: 21px;
+			font-weight: normal;
+			margin: 0;
+			line-height: 1.1;
+			color: #333;
+		}
+		p {
+			margin: 0;
+			font-size: 14px;
+			color: #606060;
+		}
+	}
+}
 .ptr-logos {
 	position: relative;
 	display: block;
@@ -399,6 +430,11 @@ body {
 		.exc {
 			width: 525px;
 			height: 135px;
+		}
+	}
+	.team {
+		.team-item {
+			width: calc(100% / 3);
 		}
 	}
 }
