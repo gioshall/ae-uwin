@@ -99,6 +99,39 @@ body {
 		top:15px;
 		left:15px;
 	}
+	.lang {
+		width: 100%;
+		max-width: 840px;
+		position: relative;
+		z-index: 1;
+		margin: auto;
+		text-align: right;
+		font-size: 12px;
+		line-height: 45px;
+		&.zh {
+			text-align: right;
+			font-size: 13px;
+		}
+		.en,
+		&.zh .zh {display: none;}
+		&.zh .en {
+			display: inline-block;
+		}
+		a {
+			width: 45px;
+			line-height: 30px;
+			height: 30px;
+			text-align: center;
+			display: inline-block;
+			text-align: center;
+			color: #efefef;
+			border-radius: 2px;
+			text-decoration: none;
+			border: 1px solid rgba(255, 255, 255, 0.4);
+			cursor: pointer;
+			margin: 0 10px;
+		}
+	} 
 }
 @keyframes head-star{
 	0%{
@@ -207,7 +240,7 @@ body {
 			margin:0;
 		}
 		> p{
-			text-align:justify;
+			text-align: left;
 			margin:0;
 		}
 	}
@@ -281,7 +314,10 @@ body {
 .platform {
 	position: relative;
 	z-index: 2;
-	> .device {width: 100%;}
+	> .device {
+		width: 100%;
+		object-fit: contain;
+	}
 }
 .platform-text {
 	padding-top:1.5em;
@@ -417,6 +453,9 @@ body {
 	.main-bg {
 		height:186vh;
 		background-size:700px 350px;
+		.lang {
+			line-height: 60px;
+		}
 	}
 	.main h1 > span{display:inline;}
 	.feature > .feature-item {padding:15px 15px 15px 136px;}
