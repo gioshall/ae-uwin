@@ -397,6 +397,9 @@ body {
 			font-size: 14px;
 			color: #606060;
 		}
+		.team-pic {
+			max-width: 180px;
+		}
 	}
 }
 .ptr-logos {
@@ -474,6 +477,18 @@ body {
 	.team {
 		.team-item {
 			width: calc(100% / 3);
+			&.team-ceo {
+				width: 100%;
+				.team-pic {
+					max-width: 240px
+				}
+				h3 {
+					font-size: 21px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
 		}
 	}
 }
